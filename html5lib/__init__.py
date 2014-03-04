@@ -13,11 +13,11 @@ tree = html5lib.parse(f)
 
 from __future__ import absolute_import, division, unicode_literals
 
-from .html5parser import HTMLParser, parse, parseFragment
+from .html5parser import HTMLParser, parse, parseFragment, ParseError
 from .treebuilders import getTreeBuilder
 from .treewalkers import getTreeWalker
 from .serializer import serialize
 
 __all__ = ["HTMLParser", "parse", "parseFragment", "getTreeBuilder",
-           "getTreeWalker", "serialize"]
+           "getTreeWalker", "serialize", "ParseError"]
 __version__ = "0.9999-dev"
